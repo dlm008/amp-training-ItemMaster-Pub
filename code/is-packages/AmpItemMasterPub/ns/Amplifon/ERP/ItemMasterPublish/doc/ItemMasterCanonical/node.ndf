@@ -30,7 +30,18 @@
         <value name="field_dim">0</value>
         <array name="field_options" type="value" depth="1">
         </array>
-        <value name="nillable">true</value>
+        <record name="field_content_type" javaclass="com.wm.util.Values">
+          <value name="contentType">1</value>
+          <value name="internalType">reference</value>
+          <value name="dataTypeVersion">dtVersion2</value>
+          <array name="targetNames" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+              <value name="ncName">string</value>
+            </record>
+          </array>
+        </record>
+        <value name="nillable">false</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
       </record>
@@ -49,7 +60,18 @@
         <value name="field_dim">0</value>
         <array name="field_options" type="value" depth="1">
         </array>
-        <value name="nillable">true</value>
+        <record name="field_content_type" javaclass="com.wm.util.Values">
+          <value name="contentType">1</value>
+          <value name="internalType">reference</value>
+          <value name="dataTypeVersion">dtVersion2</value>
+          <array name="targetNames" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+              <value name="ncName">string</value>
+            </record>
+          </array>
+        </record>
+        <value name="nillable">false</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
       </record>
@@ -68,7 +90,18 @@
         <value name="field_dim">0</value>
         <array name="field_options" type="value" depth="1">
         </array>
-        <value name="nillable">true</value>
+        <record name="field_content_type" javaclass="com.wm.util.Values">
+          <value name="contentType">1</value>
+          <value name="internalType">reference</value>
+          <value name="dataTypeVersion">dtVersion2</value>
+          <array name="targetNames" type="record" depth="1">
+            <record javaclass="com.wm.util.Values">
+              <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+              <value name="ncName">string</value>
+            </record>
+          </array>
+        </record>
+        <value name="nillable">false</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
       </record>
@@ -165,6 +198,7 @@
         <value name="field_name">defaultPrice</value>
         <value name="field_type">string</value>
         <value name="field_dim">0</value>
+        <value name="field_opt">true</value>
         <array name="field_options" type="value" depth="1">
         </array>
         <record name="field_content_type" javaclass="com.wm.util.Values">
@@ -214,6 +248,7 @@
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+        <number name="protobufKey" type="Integer">5</number>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -281,9 +316,10 @@
           </record>
           <value name="dataTypeVersion">dtVersion2</value>
         </record>
-        <value name="nillable">true</value>
+        <value name="nillable">false</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+        <number name="protobufKey" type="Integer">6</number>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -303,6 +339,7 @@
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
         <value name="is_soap_array_encoding_used">false</value>
+        <number name="protobufKey" type="Integer">7</number>
         <array name="rec_fields" type="record" depth="1">
           <record javaclass="com.wm.util.Values">
             <value name="node_type">record</value>
@@ -319,9 +356,21 @@
             <value name="field_dim">0</value>
             <array name="field_options" type="value" depth="1">
             </array>
+            <record name="field_content_type" javaclass="com.wm.util.Values">
+              <value name="contentType">1</value>
+              <value name="internalType">reference</value>
+              <value name="dataTypeVersion">dtVersion2</value>
+              <array name="targetNames" type="record" depth="1">
+                <record javaclass="com.wm.util.Values">
+                  <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                  <value name="ncName">string</value>
+                </record>
+              </array>
+            </record>
             <value name="nillable">false</value>
             <value name="form_qualified">false</value>
             <value name="is_global">false</value>
+            <number name="protobufKey" type="Integer">1</number>
           </record>
           <record javaclass="com.wm.util.Values">
             <value name="node_type">record</value>
@@ -335,11 +384,13 @@
             <value name="field_name">supplyProperties</value>
             <value name="field_type">record</value>
             <value name="field_dim">1</value>
+            <value name="field_opt">true</value>
             <value name="wrapper_type">IData</value>
             <value name="nillable">true</value>
             <value name="form_qualified">false</value>
             <value name="is_global">false</value>
             <value name="is_soap_array_encoding_used">false</value>
+            <number name="protobufKey" type="Integer">2</number>
             <array name="rec_fields" type="record" depth="1">
               <record javaclass="com.wm.util.Values">
                 <value name="node_type">record</value>
@@ -356,9 +407,21 @@
                 <value name="field_dim">0</value>
                 <array name="field_options" type="value" depth="1">
                 </array>
-                <value name="nillable">true</value>
+                <record name="field_content_type" javaclass="com.wm.util.Values">
+                  <value name="contentType">1</value>
+                  <value name="internalType">reference</value>
+                  <value name="dataTypeVersion">dtVersion2</value>
+                  <array name="targetNames" type="record" depth="1">
+                    <record javaclass="com.wm.util.Values">
+                      <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                      <value name="ncName">string</value>
+                    </record>
+                  </array>
+                </record>
+                <value name="nillable">false</value>
                 <value name="form_qualified">false</value>
                 <value name="is_global">false</value>
+                <number name="protobufKey" type="Integer">1</number>
               </record>
               <record javaclass="com.wm.util.Values">
                 <value name="node_type">record</value>
@@ -373,21 +436,37 @@
                 <value name="field_name">supplyPropertyValue</value>
                 <value name="field_type">string</value>
                 <value name="field_dim">0</value>
+                <value name="field_opt">true</value>
                 <array name="field_options" type="value" depth="1">
                 </array>
+                <record name="field_content_type" javaclass="com.wm.util.Values">
+                  <value name="contentType">1</value>
+                  <value name="internalType">reference</value>
+                  <value name="dataTypeVersion">dtVersion2</value>
+                  <array name="targetNames" type="record" depth="1">
+                    <record javaclass="com.wm.util.Values">
+                      <value name="xmlns">http://www.w3.org/2001/XMLSchema</value>
+                      <value name="ncName">string</value>
+                    </record>
+                  </array>
+                </record>
                 <value name="nillable">true</value>
                 <value name="form_qualified">false</value>
                 <value name="is_global">false</value>
+                <number name="protobufKey" type="Integer">2</number>
               </record>
             </array>
             <value name="rec_closed">true</value>
             <value name="modifiable">true</value>
+            <number name="lastProtobufKey" type="Integer">2</number>
           </record>
         </array>
         <value name="rec_closed">true</value>
         <value name="modifiable">true</value>
+        <number name="lastProtobufKey" type="Integer">2</number>
       </record>
     </array>
     <value name="modifiable">true</value>
+    <number name="lastProtobufKey" type="Integer">7</number>
   </record>
 </Values>
